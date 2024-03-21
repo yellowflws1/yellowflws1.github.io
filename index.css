@@ -1,0 +1,102 @@
+.card,
+.envelope {
+	background: #fff;
+	box-shadow: -1px 8px 3px 0 rgba(0, 0, 0, 0.6);
+	height: 55em;
+	padding: 2em;
+	position: relative;
+	width: 36em;
+}
+
+.envelope {
+	background: #cb231c;
+	box-shadow: 0 3px 2px rgba(0, 0, 0, 0.8);
+	margin: -2em -2em;
+	position: absolute;
+	transform: rotate(-8deg);
+	z-index: -1;
+}
+
+h1 {
+	font-size: 2.5em;
+	font-weight: 700;
+	margin: 0;
+	text-transform: uppercase;
+	width: 60%;
+	
+}
+
+em {
+	color: #cc2119;
+	font-style: normal;
+}
+
+p {
+	font-size: 9.5em;
+	font-weight: 700;
+	margin: 0;
+	text-transform: uppercase;
+	width: 100%;
+	text-align: center;
+}
+@keyframes beat {
+	0% {
+		transform: scale(1)
+	}
+
+	50% {
+		transform: scale(0.6)
+	}
+}
+.heart {
+	bottom: 7em;
+	position: absolute;
+	right: 10em;
+	outline: none;
+	border: 0;
+	line-height: normal;
+	overflow: visible;
+	background: none;
+	animation-name: beat;
+	animation-duration: 3500ms;
+	animation-iteration-count: infinite;
+}
+
+.heart::before,
+.heart::after {
+	background-color: #cd231b;
+	border-radius: 50px 50px 0 0;
+	content: "";
+	height: 100px;
+	left: 65px;
+	position: absolute;
+	transform: rotate(-45deg);
+	transform-origin: 0 100%;
+	width: 65px;
+}
+
+.heart::after {
+	left: 0;
+	transform: rotate(45deg);
+	transform-origin: 100% 100%;
+}
+
+/* general styling */
+html,
+body {
+	height: 100%;
+	margin: 0;
+}
+
+body {
+	align-items: center;
+	background-color: #F4F6F6;
+	display: flex;
+	font: 16px/1.05 "Montserrat", sans-serif;
+}
+
+.container {
+	margin: 0 auto;
+}
+
+
